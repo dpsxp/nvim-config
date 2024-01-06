@@ -1,6 +1,4 @@
-vim.cmd[[:set number]]
-vim.cmd[[colorscheme tokyonight-moon]]
-
+vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
