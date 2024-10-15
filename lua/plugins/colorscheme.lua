@@ -1,7 +1,7 @@
 return {
   {
     "folke/tokyonight.nvim",
-    enabled = false,
+    enabled = true,
     lazy = false,
     priority = 1000,
     opts = {},
@@ -13,8 +13,8 @@ return {
     "joshdick/onedark.vim",
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.cmd([[colorscheme onedark]])
-    end,
+    -- config = function()
+    --   vim.cmd([[colorscheme onedark]])
+    -- end,
   }
 }

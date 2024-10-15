@@ -1,10 +1,10 @@
 return {
-  { 
-    'VonHeikemen/lsp-zero.nvim',        
-    dependencies = {'williamboman/mason-lspconfig.nvim', 'williamboman/mason.nvim'},
+  {
+    'VonHeikemen/lsp-zero.nvim',
+    dependencies = { 'williamboman/mason-lspconfig.nvim', 'williamboman/mason.nvim' },
     branch = 'v3.x',
     priority = 1000,
-    opts = function () 
+    opts = function()
       local lsp_zero = require('lsp-zero')
 
       lsp_zero.extend_lspconfig()
@@ -21,15 +21,14 @@ return {
           lsp_zero.default_setup,
         },
 
-        ensure_installed = { "lua_ls", "eslint", "tsserver" },
+        ensure_installed = { "lua_ls" },
       })
-
     end
   },
-  { 
-    'hrsh7th/nvim-cmp', 
-    dependencies = { 'hrsh7th/cmp-path',  'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip'},
-    config = function ()
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = { 'hrsh7th/cmp-path', 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip' },
+    config = function()
       local cmp = require 'cmp'
       local luasnip = require 'luasnip'
 
@@ -79,8 +78,8 @@ return {
       }
     end,
   },
-  { "folke/neodev.nvim",                opts = {} },
-  { 
-    'neovim/nvim-lspconfig', 
+  { "folke/neodev.nvim", opts = {} },
+  {
+    'neovim/nvim-lspconfig',
   }
 }
